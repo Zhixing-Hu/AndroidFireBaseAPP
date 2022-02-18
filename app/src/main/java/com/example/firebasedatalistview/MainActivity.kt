@@ -48,60 +48,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, UserActivity::class.java)
             startActivity(intent)
         }
+        var button3 = findViewById<Button>(R.id.mainuploadimg)
+        button3.setOnClickListener {
+            val intent = Intent(this, StorageActivity::class.java)
+            startActivity(intent)
+        }
     }
-//    private fun sendNotification(){
-//        dbref = FirebaseDatabase.getInstance().reference
-//
-//        dbref.addValueEventListener(object : ValueEventListener{
-//            override fun onDataChange(snapshot: DataSnapshot) {
-//
-//            }
-//
-//            override fun onCancelled(error: DatabaseError) {
-//            }
-//
-//        })
-//    }
-    private fun sendNotification(phoneNumber : String, userName : String, salary: String, department : String?= null){
-//        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.RECEIVE_SMS) != PackageManager.PERMISSION_GRANTED)
-//        {
-//            ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.RECEIVE_SMS, android.Manifest.permission.SEND_SMS),
-//                111)
-//        }
-//        else
-//            receiveMsg()
-//        val sms = SmsManager.getDefault() as SmsManager
-//        sms.sendTextMessage(phoneNumber, "Admin", "message", null, null)
-
-//    Second Method
-        val uri = Uri.parse("smsto:$phoneNumber")
-        val intent = Intent(Intent.ACTION_SENDTO, uri)
-        intent.putExtra("sms_body", "Hi $userName, Your profile have changed. Salary: $salary                Department: $department           Contact Info: $phoneNumber")
-        startActivity(intent)
-    }
-//    override fun onRequestPermissionsResult(
-//        requestCode: Int,
-//        permissions: Array<out String>,
-//        grantResults: IntArray
-//    ) {
-//        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-//        if (requestCode == 111 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
-//            receiveMsg()
-//    }
-//    private fun receiveMsg() {
-//        var br = object : BroadcastReceiver(){
-//            override fun onReceive(p0: Context?, p1: Intent?) {
-//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT){
-//                    for (sms in Telephony.Sms.Intents.getMessagesFromIntent(p1)) {
-////                        Toast.makeText(applicationContext, sms.displayMessageBody, Toast.LENGTH_LONG).show()
-//                        editTextPhone.setText(sms.originatingAddress)
-//                        editTextTextMultiLine.setText(sms.displayMessageBody)
-//                    }
-//                }
-//            }
-//
-//        }
-//        registerReceiver(br, IntentFilter("android.provider.Telephony.SMS_RECEIVED"))
-//    }
 
 }

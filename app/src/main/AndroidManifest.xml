@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirebaseDataListview">
         <activity
+            android:name=".StorageActivity"
+            android:exported="false" />
+        <activity
             android:name=".MessageActivity"
             android:exported="false" />
         <activity
