@@ -1,5 +1,7 @@
 # AndroidFireBaseAPP
 
+This branch is for user testing in the future
+
 ## Features
 - Store Users Data in Firebase
 - Send/receive message to/from Users
