@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "340578339118",
+    "project_id": "fir-datalistview-3a085",
+    "storage_bucket": "fir-datalistview-3a085.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340578339118:android:ba4af12aa03a02998852bf",
+        "android_client_info": {
+          "package_name": "com.example.firebasedatalistview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340578339118-lhj8fmcskkasjbt24islrc3hkoeneqmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQwFIVyeFYeio2SM0-OaAPSilN_GKSsgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340578339118-lhj8fmcskkasjbt24islrc3hkoeneqmp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
